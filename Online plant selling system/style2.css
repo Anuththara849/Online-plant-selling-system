@@ -1,0 +1,23 @@
+<DOCTYPE html>
+margin:0;
+padding:0;
+box-sizing:border-box;
+text-transform:capitalize;
+outline:0;border:0;
+Font-family:'Ms Madi',cursive;
+font-family:'Square png',cursive;
+}
+body{
+	background:#eee;
+}
+.container{
+	width:90%;
+	margin:0 auto;
+}
+.container.heading(
+font-size:3.2rem;
+color:#333;
+margin-bottom:3rem;
+text-align:center;
+}
+

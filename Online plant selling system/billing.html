@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billing Calculator</title>
+  <style>
+body {
+  background-image: url('images (6).jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+  
+  
+</head>
+<body>
+  
+
+  <h1>Billing Calculator</h1>
+  <button onClick="window.location.href='new1.html';">Back</button><br><br>
+  
+  <label for="order">Order Name:</label>
+  <select id ="order">
+  <option value="order">Select Order</option>
+  <option value="aspidistra elatior">Aspidistra elatior</option>
+  <option value="umbrella plant care">Umbrella plant care</option>
+  <option value="dumb Cane plant">Dumb Cane plant</option>
+  <option value="monstera deliciosa">Monstera deliciosa</option>
+  <option value="snake plant in Prophetstown">Snake plant in Prophetstown</option>
+  <option value="spider plant">spider plant</option>
+  <option value="Wayfair plant">Wayfair plant</option>
+  <option value="ZZ plant">ZZ plant</option>
+  <option value="dracaena">Dracaena</option>
+  <option value="peace Lily">Peace Lily</option>
+ 
+  </select>
+
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" value="0">
+  
+  <label for="price">Price per unit:</label>
+  <input type="number" id="price" value="0">
+  <form action="billing.php"method="post">
+  <button onclick="calculateTotal()">Calculate Total</button>
+  </form>
+  <button onClick="window.location.href='payement page.html';">Payement
+
+  <p id="total">Total: Rs.0</p>
+
+  <script>
+  function calculateTotal() {
+      // Get values from input fields
+      var quantity = document.getElementById("quantity").value;
+      var price = document.getElementById("price").value;
+
+      // Perform the calculation
+      var total = quantity * price;
+
+      // Display the result
+      document.getElementById("total").innerText = "Total: Rs" + total.toFixed(2);
+    }
+  </script>
+
+</body>
+</html>
